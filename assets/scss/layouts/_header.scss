@@ -1,0 +1,101 @@
+header {
+
+    // border: var(--border);
+    // padding: 30px;
+    // background-color: black;
+    .header_body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0px;
+
+        // This is logo 
+        .logo {
+            // border: var(--border);
+            width: 130px;
+
+            img {
+                padding-top: 5px;
+            }
+        }
+
+        // class_17 
+        .right_content {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+
+            .nav {
+                // border: var(--border);
+                flex: 1;
+                display: grid;
+                align-items: center;
+            }
+
+            .extra_links {
+                display: flex;
+                gap: 10px;
+
+                .search {
+                    // border: var(--border);
+                    line-height: 0;
+
+                    a {
+                        padding-top: 8px;
+                        span{
+                            color: var(--black_deep);
+                        }
+                    }
+                }
+
+                .nav_control {
+                    // border: var(--border);
+                    display: none;
+                    align-items: center;
+
+                    a {
+                        line-height: 0;
+                    }
+                }
+            }
+
+            // Media Responsive scss 
+            @include custom_media(0px, 991.9px) {
+                justify-content: flex-end;
+
+                .nav {
+                    order: 2;
+                    flex: unset;
+
+                    ul {
+                        li {
+                            &.close_btn_nav {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+                .extra_links {
+                    order: 1;
+
+                    .nav_control {
+                        display: grid;
+                        a{
+                            span{
+                                color: var(--black_deep)
+                            }
+                        }
+                    }
+                }
+            }
+
+            ;
+        }
+
+        /*   header_body_end here*/
+    }
+
+    /* header_end here    */
+}

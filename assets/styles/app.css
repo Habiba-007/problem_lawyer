@@ -1,0 +1,312 @@
+@font-face {
+  font-family: "poppins-regular";
+  src: url("../fonts/poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "poppins-bold";
+  src: url("../fonts/poppins/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "poppins-semibold";
+  src: url("../fonts/poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "poppins-extrabold";
+  src: url("../fonts/poppins/Poppins-ExtraBold.ttf");
+}
+:root {
+  --border:1px solid red;
+  --brand_light:#0F6E8C;
+  --brand_deep:#05546D;
+  --black_light:#4F4F4F;
+  --black_deep:#2D2F30;
+  --white:#FFF;
+  --app_font:"poppins-regular";
+  --poppin_regular:"poppins-regulaar";
+  --poppin_bold:"poppins-bold";
+  --poppin_semibold:"poppins-semibold";
+  --poppin_extrabold:"poppins-extrabold";
+}
+
+/* 
+    Project: lawyer portfolio
+    User: MD Faridul Hoque
+    Github: https://github.com/${Habiba-007}
+    Date: 12 February 2024 
+    Time: 12:25:42 
+    Path: assets\scss\mixins\_media.scss
+    Task List: working on @media responsive
+*/
+/*extra small=responsive*/
+/*sm=small=responsive*/
+/*md-medium=responsive*/
+/*lg=large=responsive*/
+/*extralarge=xxl=responsive*/
+/*double xl=responsive*/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: var(--app_font);
+}
+
+img,
+label a,
+i,
+span {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+  transition-duration: 0.3s;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+p.p2 {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+header,
+nav,
+div,
+section,
+aside,
+main,
+footer {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 90px;
+  line-height: 100px;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 58px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.container {
+  width: 1400px;
+  margin: auto;
+  padding: 10px;
+}
+@media (min-width: 0px) and (max-width: 575.9px) {
+  .container {
+    width: calc(100% - 70px);
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    width: 546px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 738px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 962px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.9px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1370px;
+  }
+}
+
+header {
+  /* header_end here    */
+}
+header .header_body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0px;
+  /*   header_body_end here*/
+}
+header .header_body .logo {
+  width: 130px;
+}
+header .header_body .logo img {
+  padding-top: 5px;
+}
+header .header_body .right_content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+header .header_body .right_content .nav {
+  flex: 1;
+  display: grid;
+  align-items: center;
+}
+header .header_body .right_content .extra_links {
+  display: flex;
+  gap: 10px;
+}
+header .header_body .right_content .extra_links .search {
+  line-height: 0;
+}
+header .header_body .right_content .extra_links .search a {
+  padding-top: 8px;
+}
+header .header_body .right_content .extra_links .search a span {
+  color: var(--black_deep);
+}
+header .header_body .right_content .extra_links .nav_control {
+  display: none;
+  align-items: center;
+}
+header .header_body .right_content .extra_links .nav_control a {
+  line-height: 0;
+}
+@media (min-width: 0px) and (max-width: 991.9px) {
+  header .header_body .right_content {
+    justify-content: flex-end;
+  }
+  header .header_body .right_content .nav {
+    order: 2;
+    flex: unset;
+  }
+  header .header_body .right_content .nav ul li.close_btn_nav {
+    display: block;
+  }
+  header .header_body .right_content .extra_links {
+    order: 1;
+  }
+  header .header_body .right_content .extra_links .nav_control {
+    display: grid;
+  }
+  header .header_body .right_content .extra_links .nav_control a span {
+    color: var(--black_deep);
+  }
+}
+
+nav ul {
+  margin-bottom: 0;
+  padding: 0;
+  display: flex;
+  gap: 55px;
+  justify-content: center;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li.close_btn_nav {
+  display: none;
+}
+nav ul li.close_btn_nav {
+  text-align: right;
+}
+nav ul li.close_btn_nav a span {
+  margin-right: 20px;
+  font-size: 35px;
+}
+nav ul li a {
+  color: var(--black_deep);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+nav ul li a.active, nav ul li a:hover {
+  font-family: var(--poppin_bold);
+}
+
+@media (min-width: 0px) and (max-width: 991.9px) {
+  nav {
+    position: relative;
+  }
+  nav ul {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    width: 26vw;
+    min-width: 200px;
+    gap: 14px;
+    top: 0;
+    padding: 23px 0px;
+    right: 0px;
+    height: 100vh;
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 29px;
+    backdrop-filter: blur(2px);
+    box-shadow: 0px 0px 5px black;
+    background: rgba(206, 200, 200, 0.231372549);
+  }
+  nav ul.active {
+    display: block;
+  }
+  nav li a {
+    font-size: 19px;
+  }
+}
+#banner .banner_content {
+  display: grid;
+  grid-template-columns: 755px 1fr;
+}
+#banner .banner_content .left_banner_details .left_top_part h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 90px;
+  color: var(--brand_deep);
+  line-height: 108px;
+}
+#banner .banner_content .left_banner_details .left_top_part p {
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.5px;
+  max-width: 500px;
+  margin-top: 40px;
+}
+#banner .banner_content .left_banner_details .left_top_part a {
+  background-color: var(--brand_deep);
+  border-radius: 8px;
+}
+
+/*# sourceMappingURL=app.css.map */
