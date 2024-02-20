@@ -290,23 +290,28 @@ nav ul li a.active, nav ul li a:hover {
 #banner .banner_content {
   display: grid;
   grid-template-columns: 755px 1fr;
+  border: 2px solid red;
 }
-#banner .banner_content .left_banner_details .left_top_part h1 {
+#banner .banner_content .left_banner_details .top h1 {
   font-family: "Playfair Display", serif;
   font-size: 90px;
   color: var(--brand_deep);
-  line-height: 108px;
+  line-height: 100px;
 }
-#banner .banner_content .left_banner_details .left_top_part p {
+#banner .banner_content .left_banner_details .top p {
   font-size: 24px;
   line-height: 38px;
   letter-spacing: 0.5px;
-  max-width: 500px;
-  margin-top: 40px;
+  max-width: 499px;
+  margin-top: 44px;
 }
-#banner .banner_content .left_banner_details .left_top_part a {
+#banner .banner_content .left_banner_details .top a {
+  display: inline-block;
+  padding: 29px 36px;
   background-color: var(--brand_deep);
   border-radius: 8px;
+  color: var(--white);
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,43 +1,41 @@
 #banner {
     .banner_content {
-        // background-color: plum;
         display: grid;
         grid-template-columns: 755px 1fr;
+        border:2px solid red;
         .left_banner_details {
-            .left_top_part {
+            .top {
                 h1 {
-                   font-family: "Playfair Display", serif; 
-                   font-size: 90px;
-                   color:var(--brand_deep) ;
-                   line-height: 108px;
+                    font-family: "Playfair Display", serif;
+                    font-size: 90px;
+                    color: var(--brand_deep);
+                    line-height: 100px;
                 }
 
                 p {
                     font-size: 24px;
                     line-height: 38px;
                     letter-spacing: 0.5px;
-                    max-width: 500px;
-                    margin-top:40px ;
+                    max-width: 499px;
+                    margin-top: 44px;
+                    // padding-top: 44px;
                 }
 
                 a {
-                    // padding: 29px 36px;
+                   display: inline-block;
+                    padding: 29px 36px;
                     background-color: var(--brand_deep);
                     border-radius: 8px;
+                    color: var(--white);
+                    text-transform: uppercase;
                 }
             }
 
-            .left_bottom_part {
+            .bottom {
                 p {}
 
                 .sponsor_list {
-                    .single_sponsor_logo_top {
-                        a {
-                            img {}
-                        }
-                    }
-
-                    .single_sponsor_logo_bottom {
+                    .single_sponsor_logo {
                         a {
                             img {}
                         }
