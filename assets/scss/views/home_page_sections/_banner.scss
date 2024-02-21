@@ -4,6 +4,21 @@
         grid-template-columns: 755px 1fr;
         // border: 2px solid red;
         padding: 150px 0px 75px;
+        @include xs(){
+            grid-template-columns: 1fr;
+            padding: 20px 0px 75px;
+        }
+        @include sm(){
+            grid-template-columns: 1fr;
+            padding: 30px 0px 75px;
+        }
+        @include md(){
+            grid-template-columns: 591px 1fr;
+            padding: 92px 0px 75px;
+        }
+        @include lg(){
+            padding: 91px 0px 75px;
+        }
 
         .left_banner_details {
             .top {
@@ -12,6 +27,16 @@
                     font-size: 90px;
                     color: var(--brand_deep);
                     line-height: 100px;
+
+                    @include xs(){
+                        font-size: 29px;
+                        line-height: 39px;
+                    }
+
+                    @include sm(){
+                        font-size: 66px;
+                        line-height: 69px;
+                    }
                 }
 
                 p {
@@ -21,6 +46,10 @@
                     max-width: 499px;
                     margin-top: 44px;
                     // padding-top: 44px;
+                    @include xs(){
+                        font-size: 14px;
+                        line-height: 26px;
+                    }
                 }
 
                 a {
@@ -31,17 +60,27 @@
                     color: var(--white);
                     text-transform: uppercase;
                     margin-top: 50px;
+                    @include xs(){
+                        padding: 13px 36px;
+                    }
                 }
             }
 
             //  bottom-part
             .bottom {
                 margin-top: 95px;
+                @include xs(){
+                    margin-top: 32px;
+                }
 
                 p {
                     font-size: 22px;
                     color: var(--gray);
                     line-height: 30px;
+
+                    @include md(){
+                        width: 287px;
+                    }
                 }
 
                 .sponsor_list {
@@ -60,22 +99,43 @@
                 }
             }
         }
-    }
+        .right_banner_image{
+            position: relative;
+            .img{
+                width: 540px;
+                position: absolute;
+                left: -135px;
+                top: 1px;
 
+                @include xs(){
+                    width: 100%;
+                    position: unset;
+                    margin-top: 20px;
+                }
 
-    .right_banner_image {
-        position: relative;
-        // border: var(--border);
-
-        .img {
-            width: 540px;
-            position: absolute;
-            left: -135px;
-            top: 1px;
-
-            img {
-                width: 100%;
+                @include sm(){
+                    width: 100%;
+                    position: unset;
+                    margin-top: 40px;
+                }
+                @include md(){
+                    width: 400px;
+                    position: absolute;
+                    left: -264px;
+                    top: 252px;
+                }
+                @include lg(){
+                    left: -340px;
+                    top: 243px;
+                }
+                img{
+                    width: 100%;
+                }
             }
         }
     }
+
 }
+   
+        // border: var(--border)}
+     
