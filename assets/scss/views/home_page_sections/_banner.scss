@@ -2,7 +2,9 @@
     .banner_content {
         display: grid;
         grid-template-columns: 755px 1fr;
-        border:2px solid red;
+        // border: 2px solid red;
+        padding: 150px 0px 75px;
+
         .left_banner_details {
             .top {
                 h1 {
@@ -22,31 +24,57 @@
                 }
 
                 a {
-                   display: inline-block;
+                    //    display: inline-block;
                     padding: 29px 36px;
                     background-color: var(--brand_deep);
                     border-radius: 8px;
                     color: var(--white);
                     text-transform: uppercase;
+                    margin-top: 50px;
                 }
             }
 
+            //  bottom-part
             .bottom {
-                p {}
+                margin-top: 95px;
+
+                p {
+                    font-size: 22px;
+                    color: var(--gray);
+                    line-height: 30px;
+                }
 
                 .sponsor_list {
-                    .single_sponsor_logo {
-                        a {
-                            img {}
+                    margin-top: 32px;
+                    display: grid;
+                    grid-template-columns: 103px 103px;
+                    gap: 27px;
+
+                    a {
+                        img {
+                            width: 100%;
+                            object-fit: contain;
                         }
+
                     }
                 }
             }
         }
+    }
 
-        .right_banner_image {
-            .img {
-                img {}
+
+    .right_banner_image {
+        position: relative;
+        // border: var(--border);
+
+        .img {
+            width: 540px;
+            position: absolute;
+            left: -135px;
+            top: 1px;
+
+            img {
+                width: 100%;
             }
         }
     }
