@@ -3,25 +3,25 @@
         display: grid;
         grid-template-columns: 755px 1fr;
         // border: 2px solid red;
-        padding: 150px 0px 75px;
+        padding: 150px 0px 153px;
 
         @include xs() {
             grid-template-columns: 1fr;
-            padding: 20px 0px 75px;
+            padding: 20px 0px 153px;
         }
 
         @include sm() {
             grid-template-columns: 1fr;
-            padding: 30px 0px 75px;
+            padding: 30px 0px 153px;
         }
 
         @include md() {
             grid-template-columns: 591px 1fr;
-            padding: 92px 0px 75px;
+            padding: 92px 0px 153px;
         }
 
         @include lg() {
-            padding: 91px 0px 75px;
+            padding: 91px 0px 153px;
         }
 
         .left_banner_details {

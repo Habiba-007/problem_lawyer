@@ -127,6 +127,7 @@ h3 {
 
 .container {
   width: 1400px;
+  border: var(--border);
   margin: auto;
   padding: 10px;
 }
@@ -291,29 +292,29 @@ nav ul li a.active, nav ul li a:hover {
 #banner .banner_content {
   display: grid;
   grid-template-columns: 755px 1fr;
-  padding: 150px 0px 75px;
+  padding: 150px 0px 153px;
 }
 @media (min-width: 0px) and (max-width: 575.9px) {
   #banner .banner_content {
     grid-template-columns: 1fr;
-    padding: 20px 0px 75px;
+    padding: 20px 0px 153px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   #banner .banner_content {
     grid-template-columns: 1fr;
-    padding: 30px 0px 75px;
+    padding: 30px 0px 153px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #banner .banner_content {
     grid-template-columns: 591px 1fr;
-    padding: 92px 0px 75px;
+    padding: 92px 0px 153px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   #banner .banner_content {
-    padding: 91px 0px 75px;
+    padding: 91px 0px 153px;
   }
 }
 #banner .banner_content .left_banner_details .top h1 {
@@ -427,6 +428,16 @@ nav ul li a.active, nav ul li a:hover {
 }
 #banner .banner_content .right_banner_image .img img {
   width: 100%;
+}
+
+#our_features {
+  background-color: #F2FCFF;
+}
+
+.our_features_body {
+  border: var(--border);
+  display: grid;
+  grid-template-columns: 417px, 1fr;
 }
 
 /*# sourceMappingURL=app.css.map */

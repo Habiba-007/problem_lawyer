@@ -1,6 +1,6 @@
 .container{
     width: 1400px;
-    // border: var(--border);
+    border: var(--border);
     margin: auto; 
     padding: 10px;
     @include xs(){
