@@ -3,25 +3,25 @@
         display: grid;
         grid-template-columns: 755px 1fr;
         // border: 2px solid red;
-        padding: 150px 0px 153px;
+        padding: 150px 0px 154px;
 
         @include xs() {
             grid-template-columns: 1fr;
-            padding: 20px 0px 75px;
+            padding: 20px 0px 0px;
         }
 
         @include sm() {
             grid-template-columns: 1fr;
-            padding: 30px 0px 75px;
+            padding: 30px 0px 0px;
         }
 
         @include md() {
             grid-template-columns: 591px 1fr;
-            padding: 92px 0px 75px;
+            padding: 92px 0px 40px;
         }
 
         @include lg() {
-            padding: 91px 0px 153px;
+            padding: 91px 0px 395px;
         }
 
         .left_banner_details {
@@ -33,8 +33,8 @@
                     line-height: 100px;
 
                     @include xs() {
-                        font-size: 29px;
-                        line-height: 39px;
+                        font-size: 26px;
+                        line-height: 31px;
                     }
 
                     @include sm() {
@@ -52,8 +52,8 @@
 
                     // padding-top: 44px;
                     @include xs() {
-                        font-size: 14px;
-                        line-height: 26px;
+                        font-size: 11px;
+                        line-height: 17px;
                     }
                 }
 
@@ -85,6 +85,11 @@
                     color: var(--gray);
                     line-height: 30px;
 
+                    @include xs() {
+                        font-size: 16px;
+                        line-height: 25px;
+                    }
+
                     @include md() {
                         width: 287px;
                     }
@@ -95,6 +100,11 @@
                     display: grid;
                     grid-template-columns: 103px 103px;
                     gap: 27px;
+
+                    @include xs() {
+                        grid-template-columns: 99px 88px;
+                        gap: 24px;
+                    }
 
                     a {
                         img {
@@ -142,6 +152,16 @@
 
                 img {
                     width: 100%;
+
+                    @include sm() {
+                        position: relative;
+                        bottom: -7px;
+                    }
+
+                    @include xs() {
+                        position: relative;
+                        bottom: -7px;
+                    }
                 }
             }
         }
