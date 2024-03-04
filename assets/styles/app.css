@@ -22,6 +22,7 @@
   --black_deep:#2D2F30;
   --gray: #8B8C8C;
   --white:#FFF;
+  --testimonial_bg:#F4FBFF;
   --app_font:"poppins-regular";
   --poppin_regular:"poppins-regulaar";
   --poppin_bold:"poppins-bold";
@@ -166,6 +167,7 @@ h3 {
 
 .container {
   width: 1400px;
+  border: var(--border);
   margin: auto;
   padding: 0px 15px;
 }
@@ -642,6 +644,22 @@ nav ul li a.active, nav ul li a:hover {
 #counter .counter_content .counter_items .item h3, #counter .counter_content .counter_items .item p {
   color: var(--white);
   text-align: center;
+}
+
+#testimonial {
+  background-color: var(--testimonial_bg);
+}
+
+.testimonial_content {
+  margin-top: 61px;
+}
+.testimonial_content .common_heading {
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.5;
+}
+.testimonial_content .testimonial_item {
+  margin-top: 51px;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,0 +1,37 @@
+#testimonial {
+    background-color: var(--testimonial_bg);
+}
+
+.testimonial_content {
+    margin-top: 61px;
+
+    .common_heading {
+        font-size: 48px;
+        line-height: 64px;
+        letter-spacing: 0.5;
+    }
+
+    .testimonial_item {
+        margin-top: 51px;
+
+        .single_item {
+            .text {
+                .heading {}
+
+                .pg {}
+            }
+
+            .testimonial_owner {
+                .left {
+                    .owner_image {}
+                }
+
+                .right {
+                    .owner_name {}
+
+                    .owner_designation {}
+                }
+            }
+        }
+    }
+}
