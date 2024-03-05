@@ -651,7 +651,7 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 .testimonial_content {
-  margin-top: 61px;
+  padding: 60px 0px;
 }
 .testimonial_content .common_heading {
   font-size: 48px;
@@ -660,6 +660,47 @@ nav ul li a.active, nav ul li a:hover {
 }
 .testimonial_content .testimonial_item {
   margin-top: 51px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.testimonial_content .testimonial_item .single_item {
+  border: var(--border);
+}
+.testimonial_content .testimonial_item .single_item .text {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0px 10px 13px 6px rgba(95, 95, 98, 0.21);
+  padding: 32px;
+}
+.testimonial_content .testimonial_item .single_item .text .heading {
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+.testimonial_content .testimonial_item .single_item .text .pg {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  margin-top: 10px;
+}
+.testimonial_content .testimonial_item .single_item .testimonial_owner {
+  border: var(--border);
+  margin-top: 30px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.testimonial_content .testimonial_item .single_item .testimonial_owner .right .owner_name {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bold;
+}
+.testimonial_content .testimonial_item .single_item .testimonial_owner .right .owner_designation {
+  font-size: 14px;
+  line-height: 24px;
 }
 
 /*# sourceMappingURL=app.css.map */

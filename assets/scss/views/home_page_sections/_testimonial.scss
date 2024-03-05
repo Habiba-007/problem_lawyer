@@ -3,7 +3,8 @@
 }
 
 .testimonial_content {
-    margin-top: 61px;
+    // margin-top: 61px ;
+    padding: 60px 0px;
 
     .common_heading {
         font-size: 48px;
@@ -13,23 +14,59 @@
 
     .testimonial_item {
         margin-top: 51px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
 
         .single_item {
-            .text {
-                .heading {}
+            border: var(--border);
 
-                .pg {}
+
+            .text {
+                background-color: var(--white);
+                border-radius: 10px;
+                box-shadow: 0px 10px 13px 6px rgba(95, 95, 98, 0.21);
+                padding: 32px;
+                // padding: 68px; 
+                // width: 540px;       
+
+                .heading {
+                    text-align: center;
+                    font-size: 18px;
+                    line-height: 28px;
+                    text-transform: capitalize;
+                }
+
+                .pg {
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: 0.5px;
+                    text-align: justify;
+                    margin-top: 10px;
+                }
             }
 
             .testimonial_owner {
+                border: var(--border);
+                margin-top: 30px;
+                display: flex;
+                gap: 16px;
+                justify-content: center;
                 .left {
                     .owner_image {}
                 }
 
                 .right {
-                    .owner_name {}
+                    .owner_name {
+                        font-size: 18px;
+                        line-height: 28px;
+                        font-weight: bold;
+                    }
 
-                    .owner_designation {}
+                    .owner_designation {
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
                 }
             }
         }
