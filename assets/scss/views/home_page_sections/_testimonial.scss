@@ -18,8 +18,20 @@
         grid-template-columns: 1fr 1fr;
         gap: 30px;
 
+        @include md() {
+            grid-template-columns: 1fr;
+        }
+
+        @include sm() {
+            grid-template-columns: 1fr;
+        }
+
+        @include xs() {
+            grid-template-columns: 1fr;
+        }
+
         .single_item {
-            border: var(--border);
+            // border: var(--border);
 
 
             .text {
@@ -27,33 +39,72 @@
                 border-radius: 10px;
                 box-shadow: 0px 10px 13px 6px rgba(95, 95, 98, 0.21);
                 padding: 32px;
+                position: relative;
+
+                @include xl() {
+                    padding: 25px;
+                }
+
+                @include lg() {
+                    padding: 24px;
+                }
+
+                @include md() {
+                    padding: 12px;
+                }
+
+                @include xs() {
+                    padding: 0px;
+                }
+
                 // padding: 68px; 
                 // width: 540px;       
+                .arrow_part {
+                    height: 25px;
+                    width: 25px;
+                    background-color: var(--white);
+                    transform: rotate(181deg) translateX(-50%);
+                    clip-path: polygon(49% 54%, 0% 100%, 100% 100%);
+                    position: absolute;
+                    bottom: -11%;
+                    left: 49%;
+                }
 
                 .heading {
                     text-align: center;
                     font-size: 18px;
                     line-height: 28px;
                     text-transform: capitalize;
+
+                    @include sm() {
+                        font-size: 11px;
+                        line-height: 43px;
+                    }
+
                 }
 
                 .pg {
                     font-size: 14px;
                     line-height: 24px;
-                    letter-spacing: 0.5px;
                     text-align: justify;
                     margin-top: 10px;
                 }
+
             }
 
             .testimonial_owner {
-                border: var(--border);
+                // border: var(--border);
                 margin-top: 30px;
                 display: flex;
                 gap: 16px;
                 justify-content: center;
+
                 .left {
-                    .owner_image {}
+                    .owner_image {
+                        width: 55px;
+                        height: 55px;
+                        border-radius: 50%;
+                    }
                 }
 
                 .right {
