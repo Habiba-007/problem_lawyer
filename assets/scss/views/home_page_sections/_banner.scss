@@ -125,6 +125,9 @@
                 position: absolute;
                 left: -135px;
                 top: 1px;
+                @include xl(){
+                    left: -141px;
+                }
 
                 @include xs() {
                     width: 100%;
@@ -146,7 +149,7 @@
                 }
 
                 @include lg() {
-                    left: -340px;
+                    left: -346px;
                     top: 243px;
                 }
 
