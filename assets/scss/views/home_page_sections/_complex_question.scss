@@ -1,0 +1,60 @@
+/* 
+    Project: lawyer portfolio
+    User: MD Faridul Hoque
+    Github: https://github.com/Habiba-007
+    Date: 11 March 2024 
+    Time: 22:41:28 
+    Path: assets\scss\views\home_page_sections\_complex_question.scss
+    Task List: complex_question
+*/
+
+
+#complex_question {
+    .complex_question_content {
+        display: grid;
+        grid-template-columns: 1fr 395px;
+        gap: 30px;
+
+        .complex_question_left {
+            border: var(--border);
+            padding: 45px 0px;
+
+            .common_heading {}
+
+            .action_btn {
+                .call_btn {
+                    display: inline-flex;
+                    align-items: center;
+                    margin-top: 20px;
+                    gap: 10px;
+                    background-color: var(--call_btn_color);
+                    padding: 14px 35px;
+                    border-radius: 8px;
+                    color: var(--white);
+                    .icon {
+                        position: relative;
+                        top: 3px;
+
+                        span {
+                            width: 28px;
+                        }
+                    }
+                }
+
+                .text {
+                    font-size: 20px;
+                    position: relative;
+                    top: 1px;
+                }
+            }
+        }
+
+        .complex_question_right {
+            border: var(--border);
+
+            .img {
+                img {}
+            }
+        }
+    }
+}
