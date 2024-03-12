@@ -10,11 +10,23 @@
 
 
 #complex_question {
+    @include custom_media(0px,767.9px){
+        padding-bottom: 45px;
+    }
     .complex_question_content {
         display: grid;
         grid-template-columns: 1fr 395px;
         gap: 30px;
 
+        @include xs(){
+            grid-template-columns: 1fr;
+        }
+        @include md(){
+            grid-template-columns: 1fr;
+        }
+        @include sm(){
+            grid-template-columns: 1fr;
+        }
         .complex_question_left {
             border: var(--border);
             padding: 45px 0px;
@@ -31,9 +43,10 @@
                     padding: 14px 35px;
                     border-radius: 8px;
                     color: var(--white);
+
                     .icon {
                         position: relative;
-                        top: 3px;
+                        top: 4px;
 
                         span {
                             width: 28px;
@@ -42,9 +55,11 @@
                 }
 
                 .text {
-                    font-size: 20px;
+                    font-size: 22px;
                     position: relative;
                     top: 1px;
+                    font-weight: 600;
+                    white-space: nowrap;
                 }
             }
         }
