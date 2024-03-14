@@ -1,0 +1,100 @@
+#top_footer {
+    // padding-bottom: 45px;
+    background-color: var(--brand_light);
+
+    .top_footer_content {
+
+        // border: var(--border);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 85px 0px;
+
+        .logo {
+            width: 300px;
+
+            .img {
+                img {}
+            }
+        }
+
+        .footer_link {
+            // border: var(--border);
+            width: 200px;
+
+            .footer_link_header {
+                font-size: 20px;
+                margin-bottom: 30px;
+                color: var(--white);
+                font-weight: 500;
+                text-transform: capitalize;
+                font-family: var(--play_fair);
+            }
+
+            .link_list {
+                li {
+
+                    // margin-bottom: 12px;
+                    a {
+                        color: var(--white);
+                        font-size: 16px;
+                        line-height: 25px;
+                        font-weight: 400;
+                        text-transform: capitalize;
+                        padding: 6px;
+                        display: block;
+
+                        &:hover {
+                            background-color: var(--brand_deep);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#bottom_footer {
+    background-color: var(--brand_deep);
+    // padding-bottom: 40px;
+    padding: 22px 0px;
+
+    .bottom_footer_content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-between;
+
+        .left {
+            p {
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 25px;
+                color: var(--white);
+            }
+        }
+
+        .right {
+            .social_links {
+                display: flex;
+                gap: 5px;
+
+                li {
+                    a {
+                        i {
+                            display: inline-block;
+                            height: 25px;
+                            width: 25px;
+                            font-size: 18px;
+                            border-radius: 50%;
+                            line-height: 25px;
+                            text-align: center;
+                            background-color: var(--brand_light);
+                            color: var(--white);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

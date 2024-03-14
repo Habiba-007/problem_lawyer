@@ -203,6 +203,74 @@ h3 {
   }
 }
 
+#top_footer {
+  background-color: var(--brand_light);
+}
+#top_footer .top_footer_content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 85px 0px;
+}
+#top_footer .top_footer_content .logo {
+  width: 300px;
+}
+#top_footer .top_footer_content .footer_link {
+  width: 200px;
+}
+#top_footer .top_footer_content .footer_link .footer_link_header {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: var(--white);
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: var(--play_fair);
+}
+#top_footer .top_footer_content .footer_link .link_list li a {
+  color: var(--white);
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 6px;
+  display: block;
+}
+#top_footer .top_footer_content .footer_link .link_list li a:hover {
+  background-color: var(--brand_deep);
+}
+
+#bottom_footer {
+  background-color: var(--brand_deep);
+  padding: 22px 0px;
+}
+#bottom_footer .bottom_footer_content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+#bottom_footer .bottom_footer_content .left p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--white);
+}
+#bottom_footer .bottom_footer_content .right .social_links {
+  display: flex;
+  gap: 5px;
+}
+#bottom_footer .bottom_footer_content .right .social_links li a i {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  font-size: 18px;
+  border-radius: 50%;
+  line-height: 25px;
+  text-align: center;
+  background-color: var(--brand_light);
+  color: var(--white);
+}
+
 header {
   /* header_end here    */
 }
@@ -796,7 +864,6 @@ nav ul li a.active, nav ul li a:hover {
   }
 }
 #complex_question .complex_question_content .complex_question_left {
-  border: var(--border);
   padding: 45px 0px;
 }
 #complex_question .complex_question_content .complex_question_left .action_btn .call_btn {
@@ -822,9 +889,6 @@ nav ul li a.active, nav ul li a:hover {
   top: 1px;
   font-weight: 600;
   white-space: nowrap;
-}
-#complex_question .complex_question_content .complex_question_right {
-  border: var(--border);
 }
 
 /*# sourceMappingURL=app.css.map */
