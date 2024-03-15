@@ -663,7 +663,7 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 #counter {
-  background-image: url("../images/counter_bg/bg.png");
+  background-image: url("../images/counter_bg/counter.png");
 }
 #counter .counter_content {
   padding: 55px 0;
