@@ -1,29 +1,31 @@
-
-
-#counter{
+#counter {
     background-image: url('../images/counter_bg/counter.png');
 
-    .counter_content{
+    .counter_content {
         padding: 55px 0;
-        .counter_items{
+
+        .counter_items {
             display: flex;
             justify-content: center;
-            padding-top:48px ;
-            @include xs(){
+            padding-top: 48px;
+
+            @include xs() {
                 display: block;
             }
-            .item{
+
+            .item {
                 width: 255px;
                 gap: 30px;
-                @include xs(){
+
+                @include xs() {
                     margin: auto;
                 }
 
-                &.item2{
+                &.item2 {
                     border-left: 2px solid var(--white);
                     border-right: 2px solid var(--white);
 
-                    @include xs(){
+                    @include xs() {
                         border-left: 0;
                         border-right: 0;
                         border-top: 2px solid var(--white);
@@ -32,20 +34,24 @@
                         margin: 30px auto;
                     }
                 }
-                h3{
+
+                h3 {
                     font-size: 48px;
                     line-height: 64px;
                     margin-bottom: 30px;
                 }
-                p{
-                    font-size:18px ;
-                    line-height:30px ;
 
-                    @include sm(){
+                p {
+                    font-size: 18px;
+                    line-height: 30px;
+
+                    @include sm() {
                         line-height: 32px;
                     }
                 }
-                h3,p{
+
+                h3,
+                p {
                     color: var(--white);
                     text-align: center;
                 }
